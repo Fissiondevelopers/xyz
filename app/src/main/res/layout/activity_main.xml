@@ -1,32 +1,112 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.jetslice.imageeditortest.MainActivity">
-
-
-    <Button
-        android:id="@+id/image_select_button"
+    android:layout_height="match_parent">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="select image"/>
-    <TextView
-        android:id="@+id/uri_text"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/viewA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="horizontal">
+,
+            <ImageView
+                android:id="@+id/aviary_intro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/water3"/>
+
+                <ImageView
+                    android:src="@drawable/water3"
+                    android:id="@+id/aviary_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+                <TextView
+                    android:textSize="50dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    app:layout_anchor="@id/aviary_intro"
+                    app:layout_anchorGravity="center"
+                    android:textColor="#fff"
+                    android:id="@+id/textViewff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Retroshots"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:background="@drawable/wattex"
+            android:id="@+id/viewB"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.78"
+            android:orientation="horizontal">
+            <ImageButton
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:src="@mipmap/shareimgbtn"
+                android:padding="9dp"
+                android:background="@android:color/transparent"
+                android:textColor="#fff"
+                android:onClick="editifyImage"
+                android:text="select image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="43dp"
+                android:elevation="19dp"
+                android:id="@+id/button2xx"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+            <ImageButton
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:elevation="19dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/sharebtn"
+                android:ellipsize="marquee"
+                android:layout_marginTop="5dp"
+                android:textColor="#fff"
+                android:id="@+id/aviary_share"
+                android:text="Share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button2xx"
+                android:layout_centerHorizontal="true"/>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-3940256099942544/6300978111">
+            </com.google.android.gms.ads.AdView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/fab"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:background="@android:color/transparent"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <Button
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/image_filter_button"
-        android:text="apply filter"/>
-    <ImageView
-        android:id="@+id/image_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@mipmap/ic_centre"
+        android:onClick="toAbout"
+        app:layout_anchor="@id/viewA"
+        app:layout_anchorGravity="center|bottom"/>
 
 
-
-</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

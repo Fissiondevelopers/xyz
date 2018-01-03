@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "926577895260",
+    "firebase_url": "https://retroshots-31871.firebaseio.com",
+    "project_id": "retroshots-31871",
+    "storage_bucket": "retroshots-31871.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926577895260:android:a555e376183bef96",
+        "android_client_info": {
+          "package_name": "com.jetslice.imageeditortest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926577895260-2c8kms49jfdb14dbffsbvq06b4935lkb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jetslice.imageeditortest",
+            "certificate_hash": "52f022aad48f0128fa379bb350edbd17d925eb96"
+          }
+        },
+        {
+          "client_id": "926577895260-2pbcrsoo0qim0iofcmgopjr9merpdfbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJUNIg7qJB39BNl8g06rKrY7VYn2xWNNs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926577895260-2pbcrsoo0qim0iofcmgopjr9merpdfbd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
